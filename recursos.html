@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="EstiloT.css">
+  
+    <title>ETS</title>
+</head>
+<body>  
+ <nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="Index.html">
+      <img src="imgss/Jeringa.jpeg" alt="Logo" width="50" height="45" class="me-2">
+      Enfermedades de Transmisión Sexual
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Index.html">Inicio</a></li>
+          
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Enfermedades
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="vih.html">VIH</a></li>
+          </ul>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link text-white" href="#">Recursos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+  <article>
+ 
+        <section class="intro-hospital">
+  <div class="intro-imagen">
+    <img src="imgss/centrodeatencion.png" alt="Mujer con dudas">
+  </div>
+  <div class="intro-recursos">
+    <h2>Centros de Atención en Honduras</h2>
+    <p>
+    A continuación se mostrará una lista de los hospitales/clínicas donde se puede ir a realizar 
+    pruebas de ETS, recuerde siempre hacerse chequeos cada cierto tiempo para verificar su salud
+    </p>
+  </div>
+</section>
+
+  <section class="recursos-section">
+  <h2>Hospitales/Clínicas en Honduras</h2>
+  <div class="selector">
+    <select id="ciudadSelect" onchange="mostrarHospital()">
+      <option value="tegucigalpa">Tegucigalpa</option>
+      <option value="sanpedro">San Pedro Sula</option>
+      <option value="sanpedroclinica">Clínica San Pedro Sula</option>
+      <option value="ihsssanpedro">IHSS San Pedro Sula</option>
+    </select>
+  </div>
+
+  <div id="hospitalCard" class="card-hospital">
+  </div>
+</section>
+
+   <section class="seccion-psicologos">
+    <h2 class="titulo-recursospsicologicos">Apoyo Psicológico</h2>
+
+    <div class="cardspsico-container">
+      
+      <div class="cardpsico">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Psicóloga Alejandra">
+        <h3>Dra. Alejandra Rivera</h3>
+        <p>Psicóloga Clínica especializada en jóvenes y salud emocional.</p>
+        <p class="ubicacion">San Pedro Sula, Clínica Ferraro</p>
+        <p class="contacto">Tel: +504 9876-4321</p>
+      </div>
+
+      <div class="cardpsico">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Psicólogo Mario">
+        <h3>Lic. Mario Salgado</h3>
+        <p>Atención psicológica para adultos con enfoque en trauma y ETS.</p>
+        <p class="ubicacion">Tegucigalpa, Hospital Escuela</p>
+        <p class="contacto">Tel: +504 9988-2211</p>
+      </div>
+
+      <div class="cardpsico">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922522.png" alt="Centro Renacer">
+        <h3>Centro Psicológico Renacer</h3>
+        <p>Equipo multidisciplinario con sesiones accesibles y confidenciales.</p>
+        <p class="ubicacion">Choloma, Barrio El Centro</p>
+        <p class="contacto">Tel: +504 9532-1100</p>
+      </div>
+
+    </div>
+  </section>
+   
+    <div class="mensaje-ets">
+  <div class="overlay">
+    <div class="contenido-mensaje">
+      <h4><em>Las ETS ya no son un tabú. La información es salud, y todos merecemos conocerla. Porque la ignorancia sí es un riesgo real.</em></h4>
+    </div>
+  </div>
+</div>
+  </article>
+
+   <footer class="infoets-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About Us!</h2>
+        <p>ETS es una Página Web dedicada a informar, educar y romper el tabú 
+          sobre las Enfermedades de Transmisión Sexual. 
+          Buscamos generar conciencia con empatía y responsabilidad.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Enlaces rápidos</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="vih.html">VIH</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section social">
+        <h2>Redes Sociales</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank"><img src="imgss/instagram.jpg" alt="Instagram"></a>
+          <a href=" https://twitter.com" target="_blank"><img src="imgss/twitter.png" alt="Twitter"></a> 
+          <a href="https://www.facebook.com" target="_blank"><img src="imgss/facebook.jpg" alt="Facebook"></a>
+          <a href=" https://www.tiktok.com" target="_blank"><img src="imgss/tiktok.png" alt="Tiktok"></a> 
+        </div>
+        <div class="email">
+        <h5>Contacto</h5>
+        <p>📧 <a href="mailto:brithanyy.castroo@gmail.com">brithanyy.castroo@gmail.com</a></p>
+        <p>📞 +504 3368-2029</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ETS - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script>
+  const hospitales = {
+    tegucigalpa: {
+      nombre: "Hospital Escuela",
+      imagen: "imgss/hospitalescuela.jpg",
+      descripcion: "Centro médico nacional con servicios de pruebas para ETS, VIH, atención general y especialistas.",
+      direccion: "Blvd. Suyapa, Tegucigalpa",
+      mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.798663621521!2d-87.19977202638884!3d14.089059389398864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa2cc0544ed47%3A0x137de9ce80e71c4f!2sHospital%20Escuela!5e0!3m2!1ses!2shn!4v1749420911434!5m2!1ses!2shn"
+    },
+    sanpedro: {
+      nombre: "Hospital Mario Catarino Rivas",
+      imagen: "imgss/hospitalcatarinno.jpg",
+      descripcion: "Uno de los hospitales más grandes del norte de Honduras, atención médica general y especializada.",
+      direccion: "Col. Tara, 2a Calle, San Pedro Sula",
+      mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.226143593285!2d-88.02854472506022!3d15.499893954559572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f664fba7d0c6bd9%3A0x5be358fd121ea56d!2sHospital%20Mario%20Catarino%20Rivas!5e0!3m2!1ses!2shn!4v1717792985096!5m2!1ses!2shn"
+    },
+    sanpedroclinica: {
+      nombre: "Clínica la Ferraro",
+      imagen: "imgss/clinicaferraro.jpg",
+      descripcion: "Clínica privada de renombre con más de 30 años de trayectoria. Ofrece consultas, laboratorio, diagnóstico y atención médica de calidad.",
+      direccion: "6ª Avenida, 12ª Calle, Barrio Medina, San Pedro Sula",
+      mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.8157654024085!2d-88.02250582635786!3d15.494338954574578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f665b57a5c2c1a7%3A0x8b76bd532dc3c56e!2sHospital%20y%20Cl%C3%ADnica%20Ferraro!5e0!3m2!1ses!2shn!4v1749420529941!5m2!1ses!2shn" 
+    },
+    ihsssanpedro: {
+      nombre: "IHSS – Seguro Social San Pedro Sula",
+      imagen: "imgss/hospitalihss.jpg",
+      descripcion: "Centro médico del Instituto Hondureño de Seguridad Social (IHSS), ofrece atención médica general, especialidades, emergencias y laboratorio para pruebas diagnósticas, incluyendo pruebas de ETS. Abierto de lunes a viernes",
+      direccion: "Bulevar del Norte, San Pedro Sula",
+      mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61502.86232189434!2d-88.08766007423402!3d15.541942060538418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f665ad438135a71%3A0xeaa8b2e923107752!2sInstituto%20Hondure%C3%B1o%20de%20Seguridad%20Social!5e0!3m2!1ses!2shn!4v1749420380738!5m2!1ses!2shn"  
+    }
+  };
+
+  function mostrarHospital() {
+    const ciudad = document.getElementById("ciudadSelect").value;
+    const data = hospitales[ciudad];
+
+    document.getElementById("hospitalCard").innerHTML = `
+      <img src="${data.imagen}" alt="${data.nombre}">
+      <div class="hospital-info">
+        <h3>${data.nombre}</h3>
+        <p><strong>Dirección:</strong> ${data.direccion}</p>
+        <p>${data.descripcion}</p>
+        <iframe src="${data.mapa}" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    `;
+  }
+
+  
+  mostrarHospital();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
